@@ -49,9 +49,11 @@
 **Purpose**: Collect scientific papers from multiple sources
 
 **Sources**:
-- arXiv (cs.AI, cs.HC, q-bio.NC, etc.)
+- arXiv (cs.AI, cs.HC, q-bio.NC, quant-ph, physics.bio-ph, etc.)
 - PubMed/PubMed Central (biomedical literature)
 - bioRxiv/medRxiv (preprints)
+- PhilSci Archive (consciousness studies, philosophy of mind)
+- OSF Preprints (Open Science Framework - consciousness research)
 - Community contributions (manual uploads)
 
 **Features**:
@@ -87,12 +89,21 @@
   - Microbiome
   - Sociology
   - Social Engineering
+  - Quantum Physics
+  - Consciousness Studies
+  - Quantum Biology
+  - EMF Biology (Electromagnetic Field Effects)
+  - Biophysics
+  - Quantum Cognition
 
 - **Entity Extractor**
-  - Biological entities (genes, proteins, neurotransmitters)
-  - Psychological constructs (attention, memory, emotion)
-  - Interventions (drugs, therapies, lifestyle changes)
-  - Outcomes (performance, health, behavior)
+  - Biological entities (genes, proteins, neurotransmitters, microtubules, ion channels)
+  - Psychological constructs (attention, memory, emotion, consciousness, awareness)
+  - Quantum phenomena (coherence, entanglement, tunneling, superposition)
+  - EMF parameters (frequency, intensity, exposure duration, field type)
+  - Physical processes (quantum decoherence, wave function collapse, field interactions)
+  - Interventions (drugs, therapies, lifestyle changes, EMF exposure protocols)
+  - Outcomes (performance, health, behavior, quantum states, field effects)
 
 ### 3. Knowledge Graph
 **Purpose**: Build interconnected knowledge base with weighted relationships
@@ -155,6 +166,18 @@ kg.cross_domain_effects(
     target_domains=["psychology", "neuroscience"]
 )
 
+# Cross-domain quantum biology insights
+kg.cross_domain_effects(
+    source_domains=["quantum_biology", "emf_biology"],
+    target_domains=["neuroscience", "consciousness_studies"]
+)
+
+# EMF effects on cognition
+kg.find_causal_path("electromagnetic_fields", "cognitive_performance", max_hops=5)
+
+# Quantum effects in consciousness
+kg.query_influences("quantum_coherence", domains=["consciousness_studies", "quantum_biology"])
+
 # Intervention analysis
 kg.intervention_outcomes("intermittent fasting")
 ```
@@ -196,6 +219,41 @@ Based on 47 papers in the knowledge graph:
 
 Citations: [Shows relevant papers]
 Confidence: 78% (based on study quality, replication, sample sizes)
+```
+
+**Example Query (Quantum Biology & Consciousness)**:
+```
+User: "What evidence exists for quantum effects in consciousness and cognition?"
+
+C-LIGHT Response:
+Based on 23 papers across quantum biology, consciousness studies, and neuroscience:
+
+1. Quantum Biology Mechanisms (Emerging Evidence):
+   - Quantum coherence in microtubules (Orch-OR theory) [4 theoretical papers, 2 experimental]
+   - Quantum tunneling in enzyme reactions affecting neurotransmitter synthesis [3 studies]
+   - Entanglement in photosynthetic complexes as biological quantum model [5 papers]
+
+2. EMF Effects on Neural Function (Moderate Evidence):
+   - Extremely low frequency (ELF) EMF affects calcium ion channels → neural excitability [8 studies]
+   - Radiofrequency EMF modulates cognitive performance (mixed results) [12 studies]
+   - Geomagnetic fields influence circadian rhythms via cryptochrome proteins [4 studies]
+
+3. Cross-Domain Pathways (Speculative):
+   - Quantum coherence → Microtubule function → Neural information processing → Consciousness
+   - EMF exposure → Quantum state disruption → Cognitive effects (theoretical framework)
+
+4. Critical Gaps:
+   - Limited experimental evidence for quantum coherence at biological temperatures
+   - Decoherence timescales vs. neural processing timescales (ongoing debate)
+   - Lack of direct causal links between quantum effects and subjective experience
+
+5. Contradictory Evidence:
+   - Classical models adequately explain most neural phenomena without quantum mechanics
+   - Room temperature quantum effects remain controversial in neuroscience
+
+Citations: [Shows relevant papers from quant-ph, q-bio.NC, consciousness studies]
+Confidence: 35% (emerging field, limited replication, theoretical frameworks dominant)
+Research Status: Active area of investigation, requires more experimental validation
 ```
 
 ## Plugin Interface

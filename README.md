@@ -1,6 +1,19 @@
-# CANDLE DOI Paper Management System
+# C-LIGHT: Cognitive, Life-science, Intelligence Gathering & Hypothesis Testing
 
-The CANDLE DOI system provides two implementation strategies for managing academic papers:
+An open-source RAG system for behavioral and cognitive science research, now including **quantum physics, consciousness studies, quantum biology, and EMF biology research**.
+
+The C-LIGHT system provides two implementation strategies for managing academic papers across multiple scientific domains:
+
+## Research Domains Covered
+- **Cognitive Science**: Neuroscience, Psychology, Consciousness Studies
+- **Life Sciences**: Nutrition, Microbiome, Exercise Physiology, Sleep Science
+- **Quantum Biology**: Quantum coherence in biological systems, quantum effects in cognition
+- **EMF Biology**: Electromagnetic field effects on biological systems and cognition
+- **Physics**: Quantum Physics (quant-ph), Biophysics (physics.bio-ph)
+- **Social Sciences**: Sociology, Social Engineering
+- **Pharmacology**: Drug effects on cognition and behavior
+
+---
 
 ## Version 1: Real-time Processing (v1_realtime/)
 **Use Case**: Continuous operation with GPU server always running
@@ -30,7 +43,11 @@ ArXiv API → Download to NVMe → Process Immediately → Train Models → Arch
 ### Usage
 ```bash
 cd v1_realtime
+# Cognitive Science & AI
 python -m batch_processor --categories cs.AI cs.LG --continuous
+
+# Quantum & Consciousness Research
+python -m batch_processor --categories quant-ph q-bio.NC physics.bio-ph --continuous
 ```
 
 ## Version 2: Staged Processing (v2_staged/)
@@ -167,7 +184,7 @@ python doi_database.py --import /tmp/papers.json
 ### Research Project (v2)
 ```bash
 # 1. Define categories of interest
-echo '["cs.AI", "cs.LG", "stat.ML"]' > categories.json
+echo '["cs.AI", "cs.LG", "stat.ML", "quant-ph", "q-bio.NC", "physics.bio-ph"]' > categories.json
 
 # 2. Harvest papers for 1 month
 python hdd_harvester.py --continuous
@@ -204,3 +221,43 @@ python doi_monitor.py --alert-email admin@example.com
 - Batch processing: 10K papers/hour
 - Model update frequency: Per batch
 - Energy usage: ~100W (harvest) + 2kW (processing)
+
+## ArXiv Categories Reference
+
+### Cognitive Science & AI
+- `cs.AI` - Artificial Intelligence
+- `cs.LG` - Machine Learning
+- `cs.HC` - Human-Computer Interaction
+- `stat.ML` - Machine Learning (Statistics)
+
+### Quantum Physics & Biology
+- `quant-ph` - Quantum Physics (quantum mechanics, quantum information, quantum computing)
+- `q-bio.NC` - Neurons and Cognition (computational neuroscience, consciousness studies)
+- `physics.bio-ph` - Biological Physics (quantum biology, biophysics, EMF effects)
+
+### Life Sciences
+- `q-bio.MN` - Molecular Networks (systems biology, metabolic networks)
+- `q-bio.BM` - Biomolecules (protein structure, molecular dynamics)
+- `q-bio.TO` - Tissues and Organs (physiology, organ systems)
+
+### Additional Resources
+- **PubMed**: Biomedical literature, EMF studies, consciousness research
+- **PhilSci Archive**: Philosophy of mind, consciousness theories
+- **OSF Preprints**: Open science, replication studies, consciousness research
+
+## Example Research Queries
+
+### Quantum Biology & Consciousness
+```bash
+# Harvest quantum consciousness papers
+python arxiv_harvester.py --categories quant-ph q-bio.NC --keywords "quantum consciousness,microtubules,Orch-OR"
+
+# EMF biology research
+python arxiv_harvester.py --categories physics.bio-ph --keywords "electromagnetic fields,EMF,cognition,neural"
+```
+
+### Cross-Domain Research
+```bash
+# Multi-domain harvest for comprehensive research
+python hdd_harvester.py --categories cs.AI quant-ph q-bio.NC physics.bio-ph --continuous
+```
