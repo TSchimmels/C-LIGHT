@@ -44,7 +44,13 @@ pip install -r requirements.txt
 python hdd_harvester.py --continuous
 
 # Or harvest specific categories
-python hdd_harvester.py --categories cs.AI cs.LG --max-papers 5000
+python hdd_harvester.py --categories cs.AI cs.LG q-bio.NC q-bio.TO q-bio.MN --max-papers 5000
+
+# Brain organoid and metabolic cognition research
+python hdd_harvester.py --categories q-bio.TO q-bio.CB q-bio.NC q-bio.MN --keywords "organoid,metabolism,fasting,glucose"
+
+# Neuronal excitability and threshold research
+python hdd_harvester.py --categories q-bio.NC physics.bio-ph --keywords "firing threshold,excitability,ion channels"
 ```
 
 ### 4. Check Harvest Status
@@ -131,11 +137,35 @@ processor.recall_system.cleanup_staging()
 
 ### 1. Initial Bulk Download
 ```bash
-# Download last 6 months of papers
+# Download last 6 months of papers (comprehensive cognitive science)
 python hdd_harvester.py \
-  --categories cs.AI cs.LG cs.HC q-bio.NC \
+  --categories cs.AI cs.LG cs.HC cs.CY q-bio.NC q-bio.TO q-bio.CB q-bio.MN physics.bio-ph quant-ph \
   --max-papers 10000 \
   --days-back 180
+
+# Brain organoid specific harvest
+python hdd_harvester.py \
+  --categories q-bio.TO q-bio.CB q-bio.NC \
+  --keywords "brain organoid,cerebral organoid,neural organoid,tissue engineering" \
+  --max-papers 5000
+
+# Metabolic cognition and nutritional neuroscience
+python hdd_harvester.py \
+  --categories q-bio.NC q-bio.MN \
+  --keywords "fasting,glucose,ketones,metabolism,cognitive performance,neuronal firing" \
+  --max-papers 5000
+
+# Neuronal firing threshold research
+python hdd_harvester.py \
+  --categories q-bio.NC physics.bio-ph q-bio.BM \
+  --keywords "firing threshold,action potential,ion channels,excitability,membrane potential" \
+  --max-papers 5000
+
+# Personality and developmental psychology
+python hdd_harvester.py \
+  --categories cs.CY physics.soc-ph \
+  --keywords "personality,Big Five,developmental stages,Maslow,maturation,self-actualization" \
+  --max-papers 3000
 ```
 
 ### 2. Process in Batches
@@ -234,10 +264,78 @@ ssh -L 5000:localhost:5000 gpu-server
 python orchestrator.py --dashboard
 ```
 
+## Research Domain Examples
+
+C-LIGHT now supports comprehensive research across multiple cognitive science domains:
+
+### Brain Organoid Research
+```bash
+# Comprehensive organoid harvest
+python hdd_harvester.py \
+  --categories q-bio.TO q-bio.CB q-bio.NC q-bio.MN \
+  --keywords "brain organoid,neural organoid,organoid electrophysiology,organoid development,MEA,multielectrode" \
+  --continuous
+```
+
+### Metabolic Cognition & Nutritional Neuroscience
+```bash
+# Fasting, glucose, and metabolic effects
+python hdd_harvester.py \
+  --categories q-bio.NC q-bio.MN \
+  --keywords "fasting,intermittent fasting,glucose,ketones,metabolic state,brain energy,cognitive performance" \
+  --continuous
+
+# Sugar and insulin effects on brain
+python hdd_harvester.py \
+  --categories q-bio.NC q-bio.MN \
+  --keywords "glucose,sugar,insulin,glycemic,blood sugar,cognitive function,neuronal activity" \
+  --max-papers 5000
+```
+
+### Neuronal Excitability & Firing Thresholds
+```bash
+# Threshold manipulation research
+python hdd_harvester.py \
+  --categories q-bio.NC physics.bio-ph q-bio.BM \
+  --keywords "firing threshold,neuronal excitability,action potential,ion channels,membrane potential,neuromodulation" \
+  --continuous
+
+# Metabolic effects on firing
+python hdd_harvester.py \
+  --categories q-bio.NC q-bio.MN \
+  --keywords "metabolism,firing rate,neuronal activity,excitability,glucose,ketones,ATP,energy" \
+  --max-papers 5000
+```
+
+### Personality & Developmental Psychology
+```bash
+# Personality across lifespan
+python hdd_harvester.py \
+  --categories cs.CY physics.soc-ph \
+  --keywords "personality,Big Five,MBTI,traits,development,maturation,lifespan,aging" \
+  --max-papers 3000
+
+# Maslow and humanistic psychology
+python hdd_harvester.py \
+  --categories cs.CY \
+  --keywords "Maslow,hierarchy of needs,self-actualization,human potential,self-determination,motivation" \
+  --max-papers 2000
+```
+
+### Integrative Cross-Domain Research
+```bash
+# Everything: organoids, metabolism, firing, cognition
+python hdd_harvester.py \
+  --categories q-bio.TO q-bio.NC q-bio.CB q-bio.MN physics.bio-ph cs.AI cs.CY quant-ph \
+  --keywords "organoid,metabolism,fasting,glucose,firing,threshold,excitability,cognition,consciousness,personality" \
+  --continuous
+```
+
 ## Next Steps
 
-1. Review [full documentation](../README_DOI_SYSTEM.md)
-2. Configure for your categories of interest
-3. Set up automated scheduling
-4. Enable monitoring alerts
-5. Start harvesting!
+1. Review [full documentation](../README.md)
+2. Review [architecture documentation](../OPENSOURCE_ARCHITECTURE.md)
+3. Configure for your categories of interest
+4. Set up automated scheduling
+5. Enable monitoring alerts
+6. Start harvesting!

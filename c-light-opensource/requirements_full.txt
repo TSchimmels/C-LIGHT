@@ -1,0 +1,36 @@
+# Complete Requirements for C-LIGHT Dual System
+
+# Core dependencies
+networkx>=3.0
+arxiv>=2.0.0
+numpy>=1.24.0
+
+# Database
+python-rocksdb>=0.7.0  # Optional, will fall back if not available
+
+# PDF Processing (CRITICAL for full paper text)
+PyPDF2>=3.0.0
+# OR use pypdf (newer fork):
+# pypdf>=3.17.0
+
+# System A: Mixtral LLM-based RAG
+torch>=2.1.0
+transformers>=4.36.0
+accelerate>=0.25.0
+sentence-transformers>=2.2.0
+
+# Vector store
+faiss-gpu>=1.7.4  # Use GPU version with your setup
+# OR for CPU: faiss-cpu>=1.7.4
+
+# Optional: Quantization (if you want to save VRAM)
+bitsandbytes>=0.41.0
+
+# Optional: Flash Attention 2 (faster inference)
+flash-attn>=2.3.0  # Requires CUDA 11.8+
+
+# System B: SEAL (will add more later)
+scikit-learn>=1.3.0  # For pattern learning
+
+# Utilities
+tqdm>=4.65.0

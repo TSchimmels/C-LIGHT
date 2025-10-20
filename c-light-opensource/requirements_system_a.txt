@@ -1,0 +1,33 @@
+# System A: Mixtral-8x7B LLM-based RAG Requirements
+
+# Core dependencies
+networkx>=3.0
+arxiv>=2.0.0
+
+# Database
+python-rocksdb>=0.7.0  # Optional, will fall back if not available
+
+# LLM and Transformers
+torch>=2.1.0
+transformers>=4.36.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0  # For quantization (optional)
+
+# Embeddings
+sentence-transformers>=2.2.0
+
+# Vector store
+faiss-cpu>=1.7.4
+# OR for GPU (recommended with your setup):
+# faiss-gpu>=1.7.4
+
+# Flash Attention 2 (optional, for faster inference)
+flash-attn>=2.3.0
+
+# Utilities
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Development (optional)
+pytest>=7.0.0
+black>=23.0.0

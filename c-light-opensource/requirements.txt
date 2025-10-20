@@ -1,0 +1,18 @@
+# Core dependencies
+networkx>=3.0
+arxiv>=2.0.0
+
+# Database
+python-rocksdb>=0.7.0  # Optional, will fall back to dict if not available
+
+# Optional: For better extraction (can add later)
+# spacy>=3.5.0
+# transformers>=4.30.0
+# sentence-transformers>=2.2.0
+# torch>=2.0.0
+# faiss-cpu>=1.7.4
+
+# Development
+# pytest>=7.0.0
+# black>=23.0.0
+# mypy>=1.0.0

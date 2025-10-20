@@ -43,23 +43,32 @@ class ArxivCategory(Enum):
     """Relevant arXiv categories for behavioral and cognitive science"""
     # Computer Science
     CS_AI = "cs.AI"  # Artificial Intelligence
-    CS_HC = "cs.HC"  # Human-Computer Interaction
-    CS_CY = "cs.CY"  # Computers and Society
+    CS_HC = "cs.HC"  # Human-Computer Interaction (persuasive tech, dark patterns)
+    CS_CY = "cs.CY"  # Computers and Society (social media, digital manipulation)
     CS_LG = "cs.LG"  # Machine Learning
     CS_NE = "cs.NE"  # Neural and Evolutionary Computing
     CS_CL = "cs.CL"  # Computation and Language
+    CS_SI = "cs.SI"  # Social and Information Networks (social network analysis, information spread)
     
     # Quantitative Biology
-    Q_BIO_NC = "q-bio.NC"  # Neurons and Cognition
+    Q_BIO_NC = "q-bio.NC"  # Neurons and Cognition (includes organoid electrophysiology, firing thresholds)
     Q_BIO_QM = "q-bio.QM"  # Quantitative Methods
-    Q_BIO_BM = "q-bio.BM"  # Biomolecules
-    Q_BIO_CB = "q-bio.CB"  # Cell Behavior
+    Q_BIO_BM = "q-bio.BM"  # Biomolecules (ion channels, proteins, drug interactions, molecular mechanisms)
+    Q_BIO_CB = "q-bio.CB"  # Cell Behavior (stem cells, organoid culture)
+    Q_BIO_TO = "q-bio.TO"  # Tissues and Organs (brain organoids, tissue engineering)
+    Q_BIO_MN = "q-bio.MN"  # Molecular Networks (metabolism, energy pathways, signaling cascades)
+    Q_BIO_SC = "q-bio.SC"  # Subcellular Processes (cellular differentiation)
+    Q_BIO_GN = "q-bio.GN"  # Genomics (epigenetics, gene expression, gene-environment interactions)
     
     # Physics
-    PHYSICS_BIO = "physics.bio-ph"  # Biological Physics
+    PHYSICS_BIO = "physics.bio-ph"  # Biological Physics (EMF effects, biophysics, neuronal excitability)
     PHYSICS_MED = "physics.med-ph"  # Medical Physics
-    PHYSICS_SOC = "physics.soc-ph"  # Physics and Society
+    PHYSICS_SOC = "physics.soc-ph"  # Physics and Society (social dynamics, cultural evolution, political polarization)
     PHYSICS_DATA = "physics.data-an"  # Data Analysis, Statistics and Probability
+    QUANT_PH = "quant-ph"  # Quantum Physics (quantum biology, consciousness studies)
+
+    # Economics
+    ECON_GN = "econ.GN"  # General Economics (behavioral economics, decision-making, nudging)
     
     # Statistics
     STAT_AP = "stat.AP"  # Applications

@@ -4,7 +4,12 @@
       "mcp__serena__list_dir",
       "mcp__serena__activate_project",
       "Read(//mnt/c/CANDLE/CANDLE_CORE/core/**)",
-      "Read(//mnt/c/c-light-opensource/**)"
+      "Read(//mnt/c/c-light-opensource/**)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(cp /mnt/c/C-LIGHT/v2_staged/doi_database.py /mnt/c/C-LIGHT/c-light-opensource/harvesting/doi_database.py)",
+      "Bash(cp /mnt/c/C-LIGHT/v2_staged/hdd_harvester.py /mnt/c/C-LIGHT/c-light-opensource/harvesting/hdd_harvester.py)",
+      "Bash(cp /mnt/c/C-LIGHT/v2_staged/paper_recall.py /mnt/c/C-LIGHT/c-light-opensource/harvesting/paper_recall.py)",
+      "Bash(cp /mnt/c/C-LIGHT/v2_staged/doi_monitor.py /mnt/c/C-LIGHT/c-light-opensource/harvesting/doi_monitor.py)"
     ],
     "deny": [],
     "ask": []
