@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena__list_dir",
+      "mcp__serena__activate_project",
+      "Read(//mnt/c/CANDLE/CANDLE_CORE/core/**)",
+      "Read(//mnt/c/c-light-opensource/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
