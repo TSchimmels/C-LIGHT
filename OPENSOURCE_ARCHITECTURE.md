@@ -1,15 +1,15 @@
 # C-LIGHT Open-Source Architecture
 
 ## Vision
-**C-LIGHT** (Cognitive, Life-science, Intelligence Gathering & Hypothesis Testing) is an open-source RAG system for behavioral and cognitive science research. It harvests scientific papers, extracts causal relationships, builds knowledge graphs, and provides cross-domain insights.
+**C-LIGHT** (Cognitive, Life-science, Intelligence Gathering & Hypothesis Testing) is an open-source RAG system for analyzing quantum and molecular interactions in biological subjects. It harvests scientific papers, extracts causal relationships, builds knowledge graphs, and provides cross-scale interaction insights from quantum to organism level.
 
 ## Design Principles
 
-1. **Standalone Excellence** - World-class cognitive science RAG without external dependencies
+1. **Standalone Excellence** - World-class biological interaction analysis RAG without external dependencies
 2. **Plugin Architecture** - Can integrate with proprietary systems (e.g., CANDLE)
 3. **Community-Driven** - Open contribution model for papers, weights, and algorithms
 4. **Scientific Rigor** - Evidence-based weighting, citation tracking, reproducibility
-5. **Cross-Domain Insights** - Discover relationships across neuroscience, nutrition, sleep, social factors, etc.
+5. **Multi-Scale Insights** - Discover interactions across quantum, molecular, cellular, tissue, and organism levels
 
 ## System Architecture
 

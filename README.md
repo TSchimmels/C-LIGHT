@@ -1,31 +1,32 @@
 # C-LIGHT: Cognitive, Life-science, Intelligence Gathering & Hypothesis Testing
 
-An open-source RAG system for behavioral and cognitive science research, now including **molecular interactions, drug interactions, epigenetics, brain organoids, neuronal excitability, metabolic cognition, dopamine systems, social media manipulation (hypernudging), cultural neuroscience, political psychology, and all upstream factors affecting behavior, emotion, personality, and belief systems**.
+An open-source RAG system for identifying and analyzing quantum-level interactions in biological subjects, including **molecular interactions, drug interactions, epigenetics, brain organoids, neuronal excitability, metabolic cognition, neurotransmitter systems, environmental factors, and all physical interactions affecting cellular and organismal states**.
 
-## 🎯 Upstream Causal Chain Approach
+## 🎯 Multi-Scale Interaction Analysis
 
-C-LIGHT maps complete causal chains from molecular mechanisms to social behavior:
+C-LIGHT traces quantum and molecular interactions across biological scales in any subject:
 
-**Molecular → Neural → Cognitive → Behavioral → Social → Cultural**
+**Quantum → Molecular → Cellular → Tissue → Organism → Environmental**
 
+- **Quantum Level**: Quantum coherence, electron tunneling, electromagnetic field interactions
 - **Molecular Level**: Protein interactions, drug effects, epigenetic modifications, gene expression
-- **Metabolic Level**: Nutrition, fasting, energy metabolism, neurotransmitter synthesis
-- **Neural Level**: Firing thresholds, dopamine systems, brain circuits, neural plasticity
-- **Cognitive Level**: Attention, memory, decision-making, beliefs, emotional regulation
-- **Behavioral Level**: Personality, temperament, motivation, habits, addiction
-- **Social Level**: Group dynamics, social influence, conformity, inclusion/exclusion
-- **Cultural Level**: Norms, values, ideologies, collective behavior, cultural transmission
+- **Metabolic Level**: Nutrition, energy metabolism, neurotransmitter synthesis, cellular respiration
+- **Cellular Level**: Firing thresholds, ion channels, membrane potentials, signal transduction
+- **Tissue Level**: Organoid development, neural circuits, tissue organization, cellular networks
+- **Organism Level**: Physiological states, metabolic profiles, response patterns
+- **Environmental Level**: External factors, field interactions, substance exposure, physical conditions
 
-### Why This Matters
+### Research Applications
 
-Understanding **upstream factors** is critical because:
-- **Molecular changes** (drugs, nutrition, epigenetics) can cascade to alter personality and beliefs
-- **Dopamine manipulation** (social media, drugs) directly affects motivation and decision-making
-- **Social media algorithms** exploit neurobiological vulnerabilities to shape behavior and beliefs
-- **Cultural norms** influence gene expression and brain development
-- **Epigenetic changes** from environment can persist across generations
+Understanding **interaction cascades** enables:
+- **Quantum biology research**: How quantum effects manifest in biological systems
+- **Drug interaction studies**: Tracing molecular effects through biological pathways
+- **Organoid modeling**: Understanding development from molecular to tissue level
+- **Metabolic research**: Mapping how nutritional states affect cellular function
+- **Environmental interactions**: Identifying how external factors influence organism states
+- **Cross-scale analysis**: Connecting molecular mechanisms to observable phenotypes
 
-C-LIGHT reveals these hidden causal pathways to support defensive research and cognitive autonomy.
+C-LIGHT reveals these interaction pathways for scientific research and discovery.
 
 The C-LIGHT system provides two implementation strategies for managing academic papers across multiple scientific domains:
 
@@ -43,17 +44,17 @@ The C-LIGHT system provides two implementation strategies for managing academic 
 - **Tissue Engineering**: Organoid technology, bioengineering, stem cell biology, organ-on-chip systems
 - **Nutritional Neuroscience**: Dietary effects on cognition, sugar metabolism, fasting, ketosis, micronutrients, brain energy metabolism, nutrient effects on excitability
 - **Neuromodulation**: Factors affecting neuronal threshold (nutrition, metabolic state, ions, neurotransmitters, drugs, EMF)
-- **Dopamine Systems**: Reward pathways, motivation circuits, dopamine regulation, addiction neuroscience, incentive salience
-- **Behavioral Neuroscience**: Upstream factors affecting behavior, emotion, temperament, personality development
-- **Social Media & Digital Influence**: Hypernudging, dark patterns, persuasive technology, algorithmic manipulation, attention hijacking
-- **Social Psychology**: Group dynamics, social circles, inclusion/exclusion, peer influence, social conformity, tribalism
-- **Cultural Neuroscience**: Cultural norms, honor cultures, belief systems, cultural transmission, collective behavior
-- **Political Psychology**: Belief formation, political polarization, propaganda, information warfare, echo chambers
+- **Dopamine Systems**: Reward pathways, neurotransmitter circuits, dopamine regulation, neurochemical signaling
+- **Behavioral Neuroscience**: Physiological factors affecting organism state, response patterns, neural development
+- **Digital Environment Studies**: Screen exposure effects, electromagnetic field interactions, light spectrum influence
+- **Social Biology**: Group behaviors, population dynamics, interaction patterns, environmental adaptations
+- **Cultural Biology**: Environmental variations, population differences, developmental patterns
+- **Cognitive Development**: Neural maturation, information processing, pattern recognition, learning mechanisms
 - **Quantum Biology**: Quantum coherence in biological systems, quantum effects in cognition
 - **EMF Biology**: Electromagnetic field effects on biological systems, cognition, and neuronal firing thresholds
 - **Physics**: Quantum Physics (quant-ph), Biophysics (physics.bio-ph)
-- **Social Sciences**: Sociology, Social Engineering, Behavioral Economics
-- **Pharmacology**: Drug effects on cognition and behavior, organoid-based drug testing, natural compounds, threshold modulation
+- **Biological Sciences**: Population biology, Ethology, Comparative biology
+- **Pharmacology**: Drug effects on cellular function, organoid-based drug testing, compound interactions, receptor modulation
 
 ---
 
@@ -473,73 +474,73 @@ python arxiv_harvester.py --categories cs.CY cs.HC q-bio.NC --keywords "social m
 python hdd_harvester.py --categories q-bio.NC cs.AI --keywords "dopamine,decision making,reinforcement learning,value,prediction error,expected reward"
 ```
 
-### Social Media Manipulation & Hypernudging
+### Digital Environment & Screen Exposure
 ```bash
-# Hypernudging and persuasive technology
-python arxiv_harvester.py --categories cs.CY cs.HC --keywords "hypernudging,nudge,persuasive technology,dark patterns,manipulation,choice architecture,behavioral design"
+# Screen exposure and light effects
+python arxiv_harvester.py --categories cs.CY cs.HC q-bio.NC --keywords "screen exposure,blue light,circadian rhythm,light exposure,display technology,visual stimulation"
 
-# Social media algorithms and manipulation
-python hdd_harvester.py --categories cs.CY cs.SI cs.HC --keywords "social media,algorithm,manipulation,engagement,attention,feed,recommendation system,filter bubble"
+# Digital interface design
+python hdd_harvester.py --categories cs.CY cs.SI cs.HC --keywords "user interface,interaction design,digital environment,engagement patterns,attention patterns,screen time"
 
-# Digital addiction and attention hijacking
-python arxiv_harvester.py --categories cs.CY cs.HC q-bio.NC --keywords "digital addiction,smartphone addiction,attention economy,attention hijacking,compulsive use,screen time"
+# Technology usage patterns
+python arxiv_harvester.py --categories cs.CY cs.HC q-bio.NC --keywords "technology use,screen time,digital exposure,usage patterns,interaction frequency,device interaction"
 
-# Misinformation and propaganda
-python hdd_harvester.py --categories cs.CY cs.SI physics.soc-ph --keywords "misinformation,disinformation,propaganda,fake news,information warfare,cognitive warfare,influence operations"
+# Information processing
+python hdd_harvester.py --categories cs.CY cs.SI physics.soc-ph --keywords "information processing,pattern recognition,data presentation,visual information,cognitive load,information exposure"
 ```
 
-### Social Psychology & Group Dynamics
+### Social Biology & Group Dynamics
 ```bash
-# Social influence and conformity
-python arxiv_harvester.py --categories physics.soc-ph cs.CY --keywords "social influence,conformity,peer pressure,social norms,group dynamics,tribalism,in-group out-group"
+# Group interaction patterns
+python arxiv_harvester.py --categories physics.soc-ph q-bio.PE --keywords "group behavior,collective dynamics,population patterns,social organization,group structure,interaction networks"
 
-# Inclusion and exclusion dynamics
-python hdd_harvester.py --categories physics.soc-ph cs.SI --keywords "social inclusion,social exclusion,ostracism,belonging,social circles,social networks,peer groups"
+# Population dynamics
+python hdd_harvester.py --categories physics.soc-ph q-bio.PE --keywords "population biology,group size,density effects,proximity patterns,spacing behavior,aggregation patterns"
 
-# Social identity and group behavior
-python arxiv_harvester.py --categories physics.soc-ph --keywords "social identity,group identity,tribalism,collective behavior,group polarization,intergroup conflict"
+# Collective behavior
+python arxiv_harvester.py --categories physics.soc-ph q-bio.NC --keywords "collective movement,group coordination,synchronized behavior,swarm intelligence,emergent patterns"
 
-# Honor cultures and social reputation
-python hdd_harvester.py --categories physics.soc-ph --keywords "honor culture,reputation,social status,shame,dignity,face,cultural values"
+# Environmental variations
+python hdd_harvester.py --categories physics.soc-ph q-bio.PE --keywords "environmental adaptation,habitat differences,geographic variation,population differences,ecological factors"
 ```
 
-### Political Psychology & Belief Systems
+### Cognitive Development & Pattern Formation
 ```bash
-# Political polarization and echo chambers
-python arxiv_harvester.py --categories cs.CY cs.SI physics.soc-ph --keywords "political polarization,echo chamber,filter bubble,partisan,ideology,political beliefs,confirmation bias"
+# Pattern recognition development
+python arxiv_harvester.py --categories cs.CY cs.AI q-bio.NC --keywords "pattern recognition,cognitive development,learning patterns,information organization,schema formation,mental models"
 
-# Belief formation and cognitive biases
-python hdd_harvester.py --categories cs.CY physics.soc-ph --keywords "belief formation,cognitive bias,motivated reasoning,confirmation bias,worldview,belief perseverance"
+# Information processing patterns
+python hdd_harvester.py --categories cs.CY q-bio.NC --keywords "information processing,cognitive patterns,learning mechanisms,memory formation,pattern storage,neural encoding"
 
-# Propaganda and persuasion
-python hdd_harvester.py --categories cs.CY physics.soc-ph --keywords "propaganda,persuasion,influence,rhetoric,framing,narrative,messaging,political communication"
+# Decision-making mechanisms
+python hdd_harvester.py --categories cs.CY q-bio.NC cs.AI --keywords "decision processes,choice mechanisms,preference formation,valuation systems,option evaluation"
 
-# Moral foundations and values
-python arxiv_harvester.py --categories physics.soc-ph --keywords "moral foundations,moral psychology,values,ethics,moral judgments,sacred values,ideology"
+# Value systems and preferences
+python arxiv_harvester.py --categories q-bio.NC physics.soc-ph --keywords "preference formation,value encoding,reward processing,priority systems,evaluation mechanisms"
 ```
 
-### Cultural Neuroscience & Cultural Norms
+### Population Neuroscience & Environmental Variations
 ```bash
-# Cultural neuroscience
-python arxiv_harvester.py --categories q-bio.NC physics.soc-ph --keywords "cultural neuroscience,culture,cultural differences,cross-cultural,collectivism,individualism,cultural cognition"
+# Population neurobiology
+python arxiv_harvester.py --categories q-bio.NC physics.soc-ph --keywords "population neuroscience,geographic variation,environmental effects,population differences,comparative neuroscience"
 
-# Cultural transmission and norms
-python hdd_harvester.py --categories physics.soc-ph --keywords "cultural transmission,social norms,cultural evolution,tradition,cultural learning,norm enforcement"
+# Environmental adaptation patterns
+python hdd_harvester.py --categories physics.soc-ph q-bio.PE --keywords "environmental adaptation,developmental plasticity,phenotypic variation,environmental influences,adaptive responses"
 
-# Cultural identity and belief systems
-python arxiv_harvester.py --categories physics.soc-ph cs.CY --keywords "cultural identity,belief system,worldview,religion,ideology,cultural values,cultural practices"
+# Population-level patterns
+python arxiv_harvester.py --categories physics.soc-ph q-bio.NC --keywords "population patterns,group-level traits,demographic variation,environmental factors,geographic differences"
 ```
 
-### Upstream Factors & Causal Chains
+### Multi-Scale Interaction Chains
 ```bash
-# Comprehensive upstream behavioral research
+# Comprehensive cross-scale interaction research
 python hdd_harvester.py \
-  --categories q-bio.NC q-bio.MN q-bio.BM q-bio.GN cs.CY physics.soc-ph \
-  --keywords "epigenetics,gene expression,metabolism,neurotransmitter,dopamine,social influence,culture,environment,development,behavior,emotion,personality" \
+  --categories q-bio.NC q-bio.MN q-bio.BM q-bio.GN quant-ph physics.bio-ph \
+  --keywords "epigenetics,gene expression,metabolism,neurotransmitter,quantum effects,molecular interactions,environment,development,cellular function,organism state" \
   --continuous
 
-# Molecular to behavioral cascades
-python arxiv_harvester.py --categories q-bio.BM q-bio.NC --keywords "molecular mechanism,signaling cascade,gene to behavior,neurotransmitter,receptor,pathway,behavioral outcome"
+# Molecular to cellular cascades
+python arxiv_harvester.py --categories q-bio.BM q-bio.NC --keywords "molecular mechanism,signaling cascade,cellular response,neurotransmitter,receptor,pathway,physiological outcome"
 ```
 
 ### Temporal Pharmacology & Substance Timing Dynamics
@@ -677,42 +678,42 @@ python staged_batch_processor.py --batches 100
 - What drug interactions influence neurotransmitter systems and behavior?
 - How does nutrition affect gene expression and brain development?
 
-### Dopamine Systems & Behavioral Control
-- How do dopamine pathways regulate motivation, reward, and decision-making?
-- What manipulates dopamine release (drugs, social media, food, gambling)?
-- How does dopamine dysregulation lead to addiction and compulsive behavior?
-- What is the relationship between dopamine and personality traits?
-- How can understanding dopamine systems help resist manipulation?
+### Dopamine Systems & Neural Signaling
+- How do dopamine pathways regulate cellular signaling, reward processing, and neural function?
+- What factors affect dopamine release (drugs, nutrition, environmental stimuli)?
+- How does dopamine dysregulation affect neural circuits and cellular states?
+- What is the relationship between dopamine signaling and neural development?
+- How can understanding dopamine systems inform therapeutic approaches?
 
-### Social Media Manipulation & Hypernudging
-- How do social media algorithms exploit dopamine systems?
-- What are the mechanisms of hypernudging and persuasive technology?
-- How do dark patterns manipulate attention and behavior?
-- What psychological vulnerabilities do recommendation systems exploit?
-- How does variable reward scheduling create digital addiction?
-- What are the effects of filter bubbles and echo chambers on belief formation?
+### Digital Environment & Sensory Exposure
+- How do digital displays affect circadian rhythms and neural function?
+- What are the mechanisms of light exposure on cellular signaling?
+- How do visual stimuli patterns affect attention and neural processing?
+- What physiological responses occur from different screen exposures?
+- How does exposure timing affect biological rhythms?
+- What are the effects of information density on cognitive load?
 
-### Social Psychology & Group Dynamics
-- How do social circles and peer groups influence behavior and beliefs?
-- What drives inclusion/exclusion dynamics in social groups?
-- How does tribalism affect cognition and decision-making?
-- What role does social conformity play in belief adoption?
-- How do honor cultures shape emotional responses and behavior?
+### Group Biology & Population Dynamics
+- How do group proximities affect individual organism states?
+- What drives aggregation and dispersal dynamics in populations?
+- How does group size affect individual physiology?
+- What role does spatial organization play in population health?
+- How do different environmental contexts shape group behaviors?
 
-### Political Psychology & Belief Systems
-- How are political beliefs formed and reinforced?
-- What causes political polarization at the neurological level?
-- How do propaganda and persuasion techniques work?
-- What cognitive biases drive belief perseverance?
-- How do moral foundations differ across cultures and ideologies?
-- What makes certain beliefs resistant to evidence?
+### Neural Development & Pattern Formation
+- How are neural patterns formed and maintained?
+- What causes variation in neural development across individuals?
+- How do information processing mechanisms develop?
+- What factors drive individual differences in cognition?
+- How do different neural architectures process information?
+- What makes certain neural patterns stable over time?
 
-### Cultural Neuroscience & Cultural Norms
-- How do cultural norms influence brain development and cognition?
-- What neural differences exist across cultures?
-- How is culture transmitted and internalized?
-- What role do cultural values play in decision-making?
-- How do collectivist vs. individualist cultures affect the brain?
+### Population Neuroscience & Environmental Context
+- How do environmental variations influence neural development?
+- What neurobiological differences exist across populations?
+- How are environmental adaptations encoded neurally?
+- What role do ecological factors play in neural function?
+- How do different environmental contexts affect brain structure?
 
 ### Neuronal Excitability & Metabolism
 - How do glucose vs. ketone metabolism affect neuronal firing thresholds?
@@ -733,14 +734,14 @@ python staged_batch_processor.py --batches 100
 - How does developmental stage affect cognitive processing?
 - What is the relationship between personality and brain function?
 
-### Integrative Causal Chain Questions (UPSTREAM → DOWNSTREAM)
-- **Molecular → Behavioral**: How do protein interactions → neurotransmitter release → emotion → personality?
-- **Epigenetic → Social**: How does early trauma → epigenetic changes → temperament → social behavior?
-- **Metabolic → Cognitive**: How does fasting → ketosis → neuronal firing → cognitive performance → decision-making?
-- **Drug → Behavioral**: How do drug interactions → receptor binding → dopamine → motivation → addiction?
-- **Social → Neural**: How does social media → dopamine manipulation → reward learning → belief formation → political polarization?
-- **Cultural → Biological**: How do cultural norms → stress response → epigenetics → gene expression → brain development?
-- **Complete Chain**: How does nutrition → epigenetics → gene expression → protein synthesis → neurotransmitter function → neuronal firing → circuit activity → cognition → emotion → personality → social behavior → cultural transmission?
+### Integrative Multi-Scale Interaction Questions (QUANTUM → ORGANISM)
+- **Molecular → Cellular**: How do protein interactions → neurotransmitter release → membrane potentials → cellular states?
+- **Epigenetic → Physiological**: How does environmental exposure → epigenetic changes → gene expression → organism phenotype?
+- **Metabolic → Neural**: How does fasting → ketosis → neuronal firing → network activity → organism state?
+- **Drug → Physiological**: How do drug interactions → receptor binding → cellular signaling → tissue function → organism response?
+- **Environmental → Neural**: How does light exposure → circadian signaling → neural activity → sleep patterns → organism rhythms?
+- **Quantum → Biological**: How do quantum effects → molecular tunneling → enzyme function → metabolic pathways → cellular energy?
+- **Complete Chain**: How does nutrition → epigenetics → gene expression → protein synthesis → neurotransmitter function → neuronal firing → circuit activity → regional processing → organism state → behavioral output?
 
 ### Temporal Causal Chain Questions (WITH TIMING)
 - **Caffeine Cascade (0-8hr)**: T0: Caffeine ingestion → T15min: Absorption begins → T45min: Adenosine receptor blockade → T1hr: Peak dopamine/norepinephrine → T2hr: Peak alertness → T3-5hr: Half-life elimination → T6-8hr: Adenosine rebound → Crash → Withdrawal symptoms → Sleep disruption (if late)
